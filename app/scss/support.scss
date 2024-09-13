@@ -1,0 +1,133 @@
+.support{
+    width: 100%;
+    margin-top: 102px;
+    background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    &__back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        filter: grayscale(500);
+        opacity: 0.3;
+    }
+    &__img{
+        width: 348.61px;
+        height: 499px;
+        bottom: 0;
+        right: 141px;
+        position: absolute;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        padding: 68px;
+        position: relative;
+        z-index: 10;
+        &-title{
+            font-family: var(--bold);
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 66px;
+            text-align: left;
+            color: #fff;
+            margin: 0;
+        }
+        &-attr{
+            display: flex;
+            gap: 40px;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                span{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .circle{
+                        width:15px ;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: #383838;
+                    }
+                    font-family: var(--medium);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 23px;
+                    text-align: left;
+                    color: #fff;
+                }
+                p{
+                    font-family: var(--medium);
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+        }
+        &-desc{
+            font-family: var(--medium);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23px;
+            text-align: left;
+            max-width: 493px;
+            color: #fff;
+        }
+        &-btn{
+            width: 260px;
+            height: 60px;
+            border-radius: 12px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-family: var(--medium);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 21.86px;
+                text-align: left;
+                color: transparent;
+                background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+.phy{
+    width: 390px;
+    height: 499px;
+    right: 121px; 
+}
+.math__img{
+    width: 456px;
+    height: 475px;
+    position: absolute;
+    right: 121px;
+    bottom: 0;    
+}
+.crypto__img{
+    width: 640px;
+    height: 475px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.dop__img{
+    width: 724px;
+    height: 499px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.supp__dop{
+    max-width: 595px;
+}

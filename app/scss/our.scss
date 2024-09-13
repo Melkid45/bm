@@ -1,0 +1,113 @@
+.our{
+    width: 100%;
+    margin-top: 100px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        &-title{
+            font-family: var(--bold);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 44px;
+            text-align: left;
+            background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+            color: transparent;
+            -webkit-background-clip: text;
+            margin: 0;
+        }
+        &-block{
+            width: 100%;
+            background: #F5F5F5;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 10px 0px #0000004D;
+                padding: 35px 40px;
+                border-radius: 20px;
+                span{
+                    font-family: var(--bold);
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #383838;
+                    width: 465px;
+                }
+                p{
+                    font-family: var(--bold);
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-align: left;
+                    background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    margin: 0;
+                }
+                &-link{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-family: var(--medium);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 23px;
+                    text-align: left;
+                    color: #383838;
+                    .circle{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: transparent;
+                        border: 1px solid #018464;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &__child{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            transition: all 0.3s ease;
+                            scale: 0;
+                            position: absolute;
+                            z-index: 1;
+                            background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+                        }
+                        svg{
+                            width: 16px;
+                            height: 16px;
+                            position: relative;
+                            z-index: 2;
+                            path{
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+                }
+            }
+            &-item:hover{
+                .circle__child{
+                    scale: 1;
+                }
+                .circle{
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

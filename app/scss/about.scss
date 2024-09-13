@@ -1,0 +1,81 @@
+.about{
+    width: 100%;
+    margin-top: 100px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &-title{
+            background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+            font-family: var(--bold);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 44px;
+            text-align: left;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin: 0;
+        }
+        &-desc{
+            font-family: var(--regular);
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 37px;
+            text-align: left;
+            color: #383838;
+        }
+        &-span{
+            background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+            font-family: var(--medium);
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 37px;
+            text-align: left;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-attr{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            &-item{
+                width: 305px;
+                height: 275px;
+                padding: 20px;
+                background: #F5F5F5;
+                border-radius: 20px;
+                display: flex;
+                gap: 15px;
+                flex-direction: column;
+                &-top{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .circle{
+                        background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    span{
+                        font-family:var(--medium);
+                        font-size: 26px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        text-align: left;
+                        color: #383838;
+                        min-height: 90px;
+                    }
+                }
+                p{
+                    font-family: var(--regular);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-align: left;
+                    color: #383838;
+                }
+            }
+        }
+    }
+}

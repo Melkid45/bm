@@ -1,0 +1,157 @@
+.review{
+    width: 100%;
+    margin-top: 100px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &-title{
+            font-family: var(--bold);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 44px;
+            text-align: left;
+            background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+            color: transparent;
+            -webkit-background-clip: text;
+            margin: 0;
+        }
+        &-block{
+            background: #F5F5F5;
+            border-radius: 20px;
+            pad: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .splide{
+                width: 1200px;
+                padding: 40px 0px;
+                .splide__arrow{
+                    .circle{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: linear-gradient(253.05deg, #018464 -6.66%, #21A828 100%);
+                        transition: all 0.3s ease;
+                        scale: 0;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                    width: 40px;
+                    height: 40px;
+                    background: transparent;
+                    border: 1px solid #018464;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg{
+                        position: relative;
+                        z-index: 2;
+                        fill: none;
+                        width: 14px;
+                        height: 27px;
+                        path{
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+                .splide__arrow:hover{
+                    .circle{
+                        scale: 1;
+                    }
+                    svg{
+                        path{
+                            stroke: #fff;
+                        }
+                    }
+                }
+                .splide__arrow--next{
+                    right: -2em;
+                }
+                .splide__arrow--prev{
+                    left: -2em;
+                }
+            }
+            &-slide{
+                width: 386px !important;
+                background: #fff;
+                border-radius: 20px;
+                padding: 20px;
+                height: 386px !important;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                position: relative;
+                margin-right: 20px !important;
+                &-top{
+                    display: flex;
+                    gap: 20px;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        box-shadow: 0px 0px 10px 0px #0000004D;
+                        border-radius: 12px;
+                    }
+                    &-text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 9px;
+                        span{
+                            font-family: var(--bold);
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            text-align: left;
+                            color: #383838;
+                        }
+                        p{
+                            font-family: var(--regular);
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 19.6px;
+                            text-align: left;
+                            color: #9E9E9E;
+                        }
+                    }
+                }
+                &-desc{
+                    font-family: var(--regular);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                    
+                }
+                &-bot{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    bottom: 20px;
+                    right: 20px;
+                    span{
+                        font-family: var(--medium);
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 23px;
+                        text-align: left;
+                        color: #383838;
+                    }
+                    .circle{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #018464;
+                        svg{
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

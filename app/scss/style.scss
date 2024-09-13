@@ -1,0 +1,56 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: 'Bold';
+    src: url(../fonts/bold.woff);
+}
+@font-face {
+    font-family: 'Medium';
+    src: url(../fonts/medium.woff);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(../fonts/regular.woff);
+}
+:root{
+    --regular: 'Regular';
+    --medium: 'Medium';
+    --bold: 'Bold';
+}
+@import './reset';
+body{
+    max-width: 1440px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    font-family: var(--regular);
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.element-animation{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+p{
+    margin: 0;
+}
+
+.desk{
+    display: flex !important;
+}
+.mob{
+    display: none !important;
+}
+.hidden{
+    overflow: hidden;
+}
