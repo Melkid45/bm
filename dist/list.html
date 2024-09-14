@@ -433,14 +433,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     Оставьте заявку, чтобы получить бесплатную консультацию от нас и узнать, какие финансовые решения
                     подходят именно вам
                 </p>
-                <form action="" class="feedback__body-form">
-                    <input class="feedback__body-form-input" placeholder="Ваше Имя" type="text">
-                    <input class="feedback__body-form-input" placeholder="Ваш номер телефона" type="text">
-                    <button class="feedback__body-form-btn">
-                        Получить консультацию
-                    </button>
+                <form action="/form.php" method="post" class="feedback__body-form">
+                    <input class="feedback__body-form-input" placeholder="Ваше имя" type="text">
+                    <input id="tel" class="feedback__body-form-input" placeholder="Ваш номер телефона" type="text">
                     <label for="checkbox" class="checkbox-label">
-                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <input type="checkbox" id="checkbox" checked class="checkbox active">
                         <span class="checkbox-view">
                             <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -449,8 +446,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </span>
                         Даю согласие на обработку персональных данных
                     </label>
+                    <button type="button" class="feedback__body-form-btn">
+                        Получить консультацию
+                    </button>
+                    
                 </form>
             </div>
+        </div>
+    </section>
+    <section class="good">
+        <div class="good__body">
+            <h2 class="good__body-title">
+                Ваша заявка успешно отправлена !
+            </h2>
+            <p class="good__body-desc">
+                Мы свяжемся с вами в ближайшее время
+            </p>
+            <button class="good__body-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3607 19.78L12.0007 13.41L5.6407 19.78L4.2207 18.36L10.5907 12L4.2207 5.63997L5.6407 4.21997L12.0007 10.59L18.3607 4.22997L19.7707 5.63997L13.4107 12L19.7707 18.36L18.3607 19.78Z" fill="#9E9E9E"/>
+                </svg>
+            </button>
         </div>
     </section>
     <footer class="footer">
@@ -540,6 +556,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="js/main.min.js"></script>
 </body>
 

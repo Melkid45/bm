@@ -171,7 +171,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="who__body-attr-item">
                             <div class="who__body-attr-item-top">
                                 <div class="circle"></div>
-                                <span>Кредит на<br> развитие<br> бизнеса</span>
+                                <span>Кредит на развитие бизнеса</span>
                             </div>
                             <p>Мы предлагаем гибкие условия кредитования, которые позволят вам реализовать ваши амбициозные
                                 планы</p>
@@ -184,7 +184,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="who__body-attr-item">
                             <div class="who__body-attr-item-top">
                                 <div class="circle"></div>
-                                <span>Кредит на<br> приобретение<br> оборудования</span>
+                                <span>Кредит на приобретение оборудования</span>
                             </div>
                             <p>С нашей помощью вы сможете увеличить производительность, улучшить качество продукции и
                                 повысить конкурентоспособность</p>
@@ -198,7 +198,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="who__body-attr-item">
                             <div class="who__body-attr-item-top">
                                 <div class="circle"></div>
-                                <span>Кредит на<br> пополнение<br> оборотных средств</span>
+                                <span>Кредит на пополнение оборотных средств</span>
                             </div>
                             <p>Подходит для покрытия текущих расходов, таких как закупка сырья, оплата аренды или зарплат
                             </p>
@@ -212,7 +212,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="who__body-attr-item">
                             <div class="who__body-attr-item-top">
                                 <div class="circle"></div>
-                                <span>Кредит на<br> франшизу </span>
+                                <span>Кредит на франшизу </span>
                             </div>
                             <p>Мы предоставляем кредиты на условиях, минимизирующих первоначальные вложения и быстрой
                                 окупаемости затраты</p>
@@ -532,14 +532,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     Оставьте заявку, чтобы получить бесплатную консультацию от нас и узнать, какие финансовые решения
                     подходят именно вам
                 </p>
-                <form action="" class="feedback__body-form">
+                <form action="/form.php" method="post" class="feedback__body-form">
                     <input class="feedback__body-form-input" placeholder="Ваше Имя" type="text">
-                    <input class="feedback__body-form-input" placeholder="Ваш номер телефона" type="text">
-                    <button class="feedback__body-form-btn">
-                        Получить консультацию
-                    </button>
+                    <input id="tel" class="feedback__body-form-input" placeholder="Ваш номер телефона" type="text">
                     <label for="checkbox" class="checkbox-label">
-                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <input type="checkbox" id="checkbox" checked class="checkbox active">
                         <span class="checkbox-view">
                             <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -548,6 +545,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </span>
                         Даю согласие на обработку персональных данных
                     </label>
+                    <button type="button" class="feedback__body-form-btn">
+                        Получить консультацию
+                    </button>
                 </form>
             </div>
         </div>
@@ -639,6 +639,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="js/main.min.js"></script>
 </body>
 

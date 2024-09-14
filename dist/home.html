@@ -310,7 +310,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             <p class="sum"></p>
                         </div>
                         <div class="price__body-block-range-bot">
-                            <input id="sum_slider" class="mdl-slider mdl-js-slider" type="range" min="100000" max="100000000" step="100000" value="100000" tabindex="3">
+                            <input id="sum_slider" class="mdl-slider mdl-js-slider" type="range" min="100000" max="100000000" step="100000" value="100000">
                             <div class="price__body-block-range-bot-int">
                                 <p>
                                     от 100 000₽
@@ -327,10 +327,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             <p class="age"></p>
                         </div>
                         <div class="price__body-block-range-bot">
-                            <input id="age_slider" class="mdl-slider mdl-js-slider" type="range" min="1" max="120" step="1" value="1" tabindex="3">
+                            <input id="age_slider" class="mdl-slider mdl-js-slider" type="range" min="1" max="120" step="1" value="1">
                             <div class="price__body-block-range-bot-int">
                                 <p>
-                                    от месяца
+                                    от 1 месяца
                                 </p>
                                 <p>
                                     до 10 лет
@@ -456,7 +456,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         одобрили кредит на выгодных условиях.
                                         <br><br>Благодарю команду за помощь и профессионализм!
                                     </p>
-                                    <div class="review__body-block-slide-bot">
+                                    <a href="result.html" class="review__body-block-slide-bot">
                                         <span>Читать</span>
                                         <div class="circle">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -473,7 +473,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                                 </defs>
                                             </svg>
                                         </div>
-                                    </div>
+                                    </a>
                                 </li>
                                 <li class="splide__slide review__body-block-slide">
                                     <div class="review__body-block-slide-top">
@@ -488,7 +488,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         Кредит подобрал наилучшие условия среди всех банков и финансовых компаний.
                                         <br><br>Оперативное решение и четкое объяснение всех этапов...
                                     </p>
-                                    <div class="review__body-block-slide-bot">
+                                    <a href="result.html" class="review__body-block-slide-bot">
                                         <span>Читать</span>
                                         <div class="circle">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -505,7 +505,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                                 </defs>
                                             </svg>
                                         </div>
-                                    </div>
+                                    </a>
                                 </li>
                                 <li class="splide__slide review__body-block-slide">
                                     <div class="review__body-block-slide-top">
@@ -520,7 +520,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         эксперты помогли мне разобраться в тонкостях и выбрать оптимальную стратегию
                                         инвестирования. Теперь я уверена в своих вложениях и знаю, что делаю!
                                     </p>
-                                    <div class="review__body-block-slide-bot">
+                                    <a href="result.html" class="review__body-block-slide-bot">
                                         <span>Читать</span>
                                         <div class="circle">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -537,7 +537,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                                 </defs>
                                             </svg>
                                         </div>
-                                    </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -603,14 +603,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     Оставьте заявку, чтобы получить бесплатную консультацию от нас и узнать, какие финансовые решения
                     подходят именно вам
                 </p>
-                <form action="" class="feedback__body-form">
-                    <input class="feedback__body-form-input" placeholder="Ваше Имя" type="text">
-                    <input class="feedback__body-form-input" placeholder="Ваш номер телефона" type="text">
-                    <button class="feedback__body-form-btn">
-                        Получить консультацию
-                    </button>
+                <form action="/form.php" class="feedback__body-form" method="post">
+                    <input class="feedback__body-form-input" placeholder="Ваше имя" type="text">
+                    <input id="tel" class="feedback__body-form-input" placeholder="Ваш номер телефона" type="text">
                     <label for="checkbox" class="checkbox-label">
-                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <input type="checkbox" id="checkbox" checked class="checkbox active">
                         <span class="checkbox-view">
                             <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6.86207L8 11L13 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -618,8 +615,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </span>
                         Даю согласие на обработку персональных данных 
                     </label>
+                    <button type="button" class="feedback__body-form-btn">
+                        Получить консультацию
+                    </button>
+                    
                 </form>
             </div>
+        </div>
+    </section>
+    <section class="good">
+        <div class="good__body">
+            <h2 class="good__body-title">
+                Ваша заявка успешно отправлена !
+            </h2>
+            <p class="good__body-desc">
+                Мы свяжемся с вами в ближайшее время
+            </p>
+            <button class="good__body-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3607 19.78L12.0007 13.41L5.6407 19.78L4.2207 18.36L10.5907 12L4.2207 5.63997L5.6407 4.21997L12.0007 10.59L18.3607 4.22997L19.7707 5.63997L13.4107 12L19.7707 18.36L18.3607 19.78Z" fill="#9E9E9E"/>
+                </svg>
+            </button>
         </div>
     </section>
     <footer class="footer">
@@ -709,6 +725,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="js/main.min.js"></script>
 </body>
 
